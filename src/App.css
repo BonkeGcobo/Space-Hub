@@ -1,3 +1,23 @@
 body {
   margin: 0;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar {
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+  gap: 10px;
+}
+
+.tag {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
