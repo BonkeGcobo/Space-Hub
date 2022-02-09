@@ -12,7 +12,7 @@ function RocketsData() {
   }, []);
 
   return (
-    <div className="my-5 px-5">
+    <div className="rocket-container">
       {rockets.map((rocket) => (
         <RocketInfo
           rocket_name={rocket.rocket_name}
