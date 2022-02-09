@@ -1,11 +1,9 @@
-import React from 'react';
+import MissionList from '../components/MissionList';
 
-function Mission() {
-  return (
-    <div>
-      <h1>Nothing Yet</h1>
-    </div>
-  );
-}
+const Missions = () => (
+  <main>
+    <MissionList />
+  </main>
+);
 
-export default Mission;
+export default Missions;
