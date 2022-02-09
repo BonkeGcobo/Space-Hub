@@ -1,9 +1,10 @@
 import React from 'react';
+import RocketsData from '../components/RocketsData';
 
 function Rockets() {
   return (
     <div>
-      <h1>Comming Soon</h1>
+      <RocketsData />
     </div>
   );
 }
