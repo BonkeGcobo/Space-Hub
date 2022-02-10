@@ -27,11 +27,11 @@ const MissionList = (() => {
       <tbody>
         {missions.map((data) => (
           <MissionInfo
-            key={data.missionId}
-            name={data.missionName}
+            key={data.mission_id}
+            name={data.mission_name}
             description={data.description}
             memberActive={data.member}
-            idx={data.missionId}
+            idx={data.mission_id}
           />
         ))}
       </tbody>

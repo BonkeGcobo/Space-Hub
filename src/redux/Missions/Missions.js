@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import axios from 'axios';
 
 const MISSIONS_FETCHED = 'Missions/MISSIONS_FETCHED';
@@ -28,9 +29,9 @@ export const getMissions = () => async (dispatch) => {
   axios.get(BaseUrl)
     .then((response) => {
       const newMission = response.data;
-      const mappedMissions = Object.entries(newMission).map(([missionId, mission]) => {
-        const { missionName, description } = mission;
-        return { missionId, missionName, description };
+      const mappedMissions = Object.entries(newMission).map(([mission_id, mission]) => {
+        const { mission_name, description } = mission;
+        return { mission_id, mission_name, description };
       });
       dispatch(missionsFetched(mappedMissions));
     });
