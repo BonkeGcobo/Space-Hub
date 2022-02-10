@@ -12,11 +12,11 @@
 }
 
 .rocket-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .rev-word {
-  background-color: #03C197;
+  background-color: #03c197;
   color: #fff;
   padding: 0.25rem;
 }
