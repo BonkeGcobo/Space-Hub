@@ -17,6 +17,11 @@
 
 .rev-word {
   background-color: #03c197;
+  border-radius: 10%;
   color: #fff;
   padding: 0.25rem;
+}
+
+.cancel-book {
+  padding: 0.5rem;
 }

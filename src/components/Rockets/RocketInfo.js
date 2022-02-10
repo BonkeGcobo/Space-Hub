@@ -27,10 +27,10 @@ function RocketInfo({
         {reserved ? (
           <button
             type="button"
-            className="py-2 px-5 rounded text-red-500 border border-red-400"
+            className="cancel-book"
             onClick={() => handleToggleClick(id)}
           >
-            Cancel Reserve
+            Cancel Reservation
           </button>
         ) : (
           <button
