@@ -1,0 +1,12 @@
+.rocket {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.rocket-btn {
+  border-style: none;
+  background-color: #0e72ed;
+  color: #fff;
+  padding: 0.5rem;
+}
