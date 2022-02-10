@@ -10,3 +10,13 @@
   color: #fff;
   padding: 0.5rem;
 }
+
+.rocket-btn:hover {
+    cursor: pointer;
+}
+
+.rev-word {
+  background-color: #03C197;
+  color: #fff;
+  padding: 0.25rem;
+}
