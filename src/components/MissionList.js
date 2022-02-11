@@ -1,25 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import Mission from './MissionInfo';
-import { joinMission } from '../redux/Missions/Missions';
-import { getMissions } from '../services/spacexAPI';
+import PropTypes from 'prop-types';
+import ItemMission from './MissionInfo';
 
-const MissionList = (() => {
-  const missions = useSelector((state) => state.missionReducer.missions);
-  const dispatch = useDispatch();
+const MissionList = (props) => {
+  const { missions } = props;
 
-  const handleClick = ((e) => {
-    const missionId = e.target.id;
-    dispatch(joinMission(missionId));
-  });
-
-  useEffect(async () => {
-    if (Object.values(missions).length > 0) {
-      return missions;
-    }
-    dispatch(getMissions());
-    return missions;
-  }, [dispatch]);
   return (
     <table className="min-w-full table-auto">
       <thead className="bg-white border-b">
@@ -30,20 +14,16 @@ const MissionList = (() => {
         </tr>
       </thead>
       <tbody>
-
-        {missions.map((data) => (
-          <Mission
-            key={data.mission_id}
-            name={data.mission_name}
-            description={data.description}
-            reserved={data.reserved}
-            idx={data.mission_id}
-            toggleMission={handleClick}
-          />
+        {missions.map((mission) => (
+          <ItemMission mission={mission} key={mission.id} />
         ))}
       </tbody>
     </table>
   );
-});
+};
+
+MissionList.propTypes = {
+  missions: PropTypes.instanceOf(Array).isRequired,
+};
 
 export default MissionList;
