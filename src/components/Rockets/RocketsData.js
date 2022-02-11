@@ -14,7 +14,6 @@ function RocketsData() {
   const handleToggleClick = (id) => {
     dispatch(rocketBooking(id));
   };
-
   return (
     <div className="rocket-container">
       {rockets.map((rocket) => (

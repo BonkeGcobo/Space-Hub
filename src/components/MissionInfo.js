@@ -1,20 +1,6 @@
-import { useDispatch } from 'react-redux';
-import { memberStatusFunc, memberActivated } from '../redux/Missions/Missions';
+import React from 'react';
 
 const Mission = ((props) => {
-  const dispatch = useDispatch();
-
-  const onClick = ((e) => {
-    const missionId = e.target.parentElement.id;
-    if (e.target.value === 'Join') {
-      const activeMember = true;
-      dispatch(memberStatusFunc({ missionId, activeMember }));
-    } else if (e.target.value === 'leave') {
-      const notActive = false;
-      dispatch(memberActivated({ missionId, notActive }));
-    }
-  });
-
   const data = props;
   return (
     <tr className="missions bg-white odd:bg-gray-100 border-b transition duration-300 ease-in-out hover:bg-lime-100">
@@ -22,7 +8,7 @@ const Mission = ((props) => {
       <td className="mission-description text-sm text-gray-900 font-light px-6 py-4 w-1/2 max-h-36">{data.description}</td>
       <td className="mission-1 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap max-w-fit">
         {
-            data.memberActive === true
+            data.reserved === true
               ? (
                 <span className="span-word bg-blue-400 text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded
                 dark:bg-blue-400 dark:text-white"
@@ -40,14 +26,15 @@ const Mission = ((props) => {
         }
       </td>
       <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap man-w-fit" id={data.idx}>
-        {data.memberActive === true
+
+        {data.reserved === true
           ? (
             <button
               className="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border
               border-gray-500 hover:border-transparent rounded"
               type="button"
               value="leave"
-              onClick={onClick}
+              onClick={data.toggleMission}
             >
               Leave Mission
             </button>
@@ -58,7 +45,7 @@ const Mission = ((props) => {
               border-gray-500 hover:border-transparent rounded"
               type="button"
               value="Join"
-              onClick={onClick}
+              onClick={data.toggleMission}
             >
               Join Mission
             </button>
