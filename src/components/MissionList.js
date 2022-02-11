@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import MissionInfo from './MissionInfo';
-import { getMissions } from '../redux/Missions/Missions';
+import Mission from './MissionInfo';
+import { getMissions } from '../services/spacexAPI';
 
 const MissionList = (() => {
   const missions = useSelector((state) => state.missionReducer.missions);
@@ -26,7 +26,7 @@ const MissionList = (() => {
       </thead>
       <tbody>
         {missions.map((data) => (
-          <MissionInfo
+          <Mission
             key={data.mission_id}
             name={data.mission_name}
             description={data.description}
