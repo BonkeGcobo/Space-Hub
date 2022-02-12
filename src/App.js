@@ -7,6 +7,7 @@ import Profile from './pages/Profile';
 import MissionList from './components/MissionList';
 import { getMissions } from './redux/Missions/Missions';
 import { getRockets } from './redux/rockets/rockets';
+import './App.css';
 
 const App = () => {
   const dispatch = useDispatch();

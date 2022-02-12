@@ -8,23 +8,30 @@ const Profile = () => {
   const filteredMissions = missions.filter((mission) => mission.reserved);
 
   return (
-    <div>
-      <div>
+    <div className="block-prof">
+      <div className="rock-table margin">
         <h2>My missions</h2>
-        {filteredMissions.map((mission) => (
-          <div key={mission.mission_id} className="border p-5">
-            {mission.mission_name}
-          </div>
-        ))}
+        <table className="tablex table-box tbody">
+          <tbody>
+            {filteredMissions.map((mission) => (
+              <tr key={mission.mission_id} className="border p-5">
+                <td className="roc-mis">{mission.mission_name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <div>
-
+      <div className="rock-table">
         <h2>My rockets</h2>
-        {filteredRockets.map((rocket) => (
-          <div key={rocket.id} className="border p-5">
-            {rocket.rocket_name}
-          </div>
-        ))}
+        <table className="tablex table-box tbody">
+          <tbody>
+            {filteredRockets.map((rocket) => (
+              <tr key={rocket.id} className="border p-5">
+                <td className="roc-mis">{rocket.rocket_name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
