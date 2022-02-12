@@ -35,7 +35,8 @@ function RocketInfo({
         ) : (
           <button
             type="button"
-            className="rocket-btn "
+            className="rocket-btn"
+            data-testid="rocket-btn"
             onClick={() => handleToggleClick(id)}
           >
             Reserve Rocket
