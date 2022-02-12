@@ -3,7 +3,7 @@ import RocketsData from '../components/Rockets/RocketsData';
 
 function Rockets() {
   return (
-    <div>
+    <div className="rockets-body">
       <RocketsData />
     </div>
   );

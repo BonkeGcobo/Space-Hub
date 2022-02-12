@@ -5,12 +5,13 @@ const MissionList = (props) => {
   const { missions } = props;
 
   return (
-    <table className="min-w-full table-auto">
-      <thead className="bg-white border-b">
-        <tr>
-          <th className="tabel-list text-sm font-medium text-gray-900 px-6 py-4 text-left">Mission</th>
-          <th className="table-list text-sm font-medium text-gray-900 px-6 py-4 text-left">Description</th>
-          <th className="table-list text-sm font-medium text-gray-900 px-6 py-4 text-left">Status</th>
+    <table className="mission-table table-box">
+      <thead className="mission-thead">
+        <tr className="table-box white">
+          <th className="table-box thwidth">Mission</th>
+          <th className="table-box th-two">Description</th>
+          <th className="table-box th-three">Status</th>
+          <th className="table-box th-four" aria-label="Mute volume" />
         </tr>
       </thead>
       <tbody>
