@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { memberJoinConfirmation, memberLeaveConfirmation } from '../redux/Missions/missions';
+import { memberJoinConfirmation, memberLeaveConfirmation } from '../redux/Missions/Missions';
 
 /* eslint-disable camelcase */
 const ItemMission = (props) => {
