@@ -5,14 +5,19 @@ import Navbar from './components/Navbar';
 import Rockets from './pages/Rockets';
 import Profile from './pages/Profile';
 import MissionList from './components/MissionList';
-import { getMissions } from './redux/Missions/Missions';
+import { getMissions } from './redux/Missions/missions';
+import { getRockets } from './redux/rockets/rockets';
 
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());
   }, [dispatch]);
-  const missions = useSelector((state) => state.missionReducer);
+
+  useEffect(() => {
+    dispatch(getRockets());
+  }, []);
+  const missions = useSelector((state) => state.missionsReducer);
   return (
     <>
       <Navbar />

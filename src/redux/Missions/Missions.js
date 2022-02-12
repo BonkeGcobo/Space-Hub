@@ -35,7 +35,7 @@ export const getMissions = () => async (dispatch) => {
   dispatch(missionsFetched(mappedMissions));
 };
 
-const missionReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'MISSIONS_FETCHED':
       return action.payload;
@@ -54,4 +54,4 @@ const missionReducer = (state = initialState, action) => {
   }
 };
 
-export default missionReducer;
+export default reducer;
