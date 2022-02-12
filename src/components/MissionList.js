@@ -1,19 +1,8 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import MissionInfo from './MissionInfo';
-import { getMissions } from '../redux/Missions/Missions';
+import PropTypes from 'prop-types';
+import ItemMission from './MissionInfo';
 
-const MissionList = (() => {
-  const missions = useSelector((state) => state.missionReducer.missions);
-  const dispatch = useDispatch();
-
-  useEffect(async () => {
-    if (Object.values(missions).length > 0) {
-      return missions;
-    }
-    dispatch(getMissions());
-    return missions;
-  }, [dispatch]);
+const MissionList = (props) => {
+  const { missions } = props;
 
   return (
     <table className="min-w-full table-auto">
@@ -25,18 +14,16 @@ const MissionList = (() => {
         </tr>
       </thead>
       <tbody>
-        {missions.map((data) => (
-          <MissionInfo
-            key={data.mission_id}
-            name={data.mission_name}
-            description={data.description}
-            memberActive={data.member}
-            idx={data.mission_id}
-          />
+        {missions.map((mission) => (
+          <ItemMission mission={mission} key={mission.id} />
         ))}
       </tbody>
     </table>
   );
-});
+};
+
+MissionList.propTypes = {
+  missions: PropTypes.instanceOf(Array).isRequired,
+};
 
 export default MissionList;
