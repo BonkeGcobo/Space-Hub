@@ -1,56 +1,51 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Travelers Hub
 
-> Description the project.
+> Group project, we were build a space travel application using the SpaceX Data API
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML , CSS AND JAVASCRIPT
+- REACT
+- JEST, VS-CODE
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://stoic-brahmagupta-d3bba7.netlify.app/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+git clone this link [repo](https://github.com/BonkeGcobo/Space-Hub.git)
+cd Space-hub
+Open your favorite code-editor
 
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+1) Internet Connection
+2) Knowledge of React
 
-### Install
-
-### Usage
 
 ### Run tests
-
-### Deployment
-
-
+npm run test
 
 ## Authors
 
-👤 **Author1**
+👤 **Bonke Gcobo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/BonkeGcobo)
+- Twitter: [@twitterhandle](https://twitter.com/bonke_gcobo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bonkegcobo/)
 
-👤 **Author2**
+👤 **Victor Chukuemeka**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/chukwuemeka1234)
+- Twitter: [@twitterhandle](https://twitter.com/avc_victor)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vic-chukwuemeka/)
 
 ## 🤝 Contributing
 

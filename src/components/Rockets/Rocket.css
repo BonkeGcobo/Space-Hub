@@ -1,0 +1,27 @@
+.rocket {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.rocket-btn {
+  border-style: none;
+  background-color: #0e72ed;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.rocket-btn:hover {
+  cursor: pointer;
+}
+
+.rev-word {
+  background-color: #03c197;
+  border-radius: 10%;
+  color: #fff;
+  padding: 0.25rem;
+}
+
+.cancel-book {
+  padding: 0.5rem;
+}

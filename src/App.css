@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto Slab'");
+
+body {
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #535252;
+  margin-bottom: 2rem;
+}
+
+.img-logo {
+  margin-left: 1rem;
+}
+
+.Logo-space {
+  flex: 1;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.navBar {
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.tag {
+  text-decoration: none;
+  color: #4996df;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.rockets-body {
+  margin-left: 1rem;
+}
+
+.span-profile {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.mission-table {
+  margin: 4% auto 6% auto;
+  max-width: 92%;
+}
+
+.table-box {
+  border-collapse: collapse;
+  border: 1px solid #eaecef;
+}
+
+.tbody {
+  border-radius: 10px;
+}
+
+th {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+td,
+th {
+  padding: 1%;
+}
+
+.thwidth {
+  width: 13%;
+}
+
+.th-two {
+  width: 55%;
+}
+
+.th-three {
+  width: 14%;
+}
+
+.th-four {
+  width: 22%;
+}
+
+.spec {
+  text-align: center;
+}
+
+.spectwo {
+  text-align: left;
+}
+
+.but-inactive {
+  background-color: #7f868d;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3.5%;
+  border: none;
+}
+
+.but-active {
+  background-color: #18a2b8;
+}
+
+.but-join {
+  padding: 5%;
+  border: 1px solid;
+  background-color: #eaecef;
+}
+
+.but-leave {
+  background-color: #fff;
+  border: 1px solid rgb(253, 77, 77);
+  color: rgb(253, 77, 77);
+}
+
+.text {
+  align-self: center;
+}
+
+.block-prof {
+  display: flex;
+  padding: 4%;
+  max-width: 100%;
+}
+
+.rock-table {
+  width: 50%;
+}
+
+.roc-mis {
+  height: 3rem;
+}
+
+.margin {
+  margin: 0 2% 0 0;
+}
+
+.tablex {
+  width: 100%;
+}
